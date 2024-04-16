@@ -1,0 +1,15 @@
+#! /bin/bash
+input_dir=$1
+output_dir=$2
+files_in_input_dir=`find $input_dir -maxdepth 1 -type f`
+#echo $files_in_input_dir
+directories_in_input_dir=`find $input_dir -maxdepth 1 -type d`
+#echo $directories_in_input_dir
+let n=0
+for file in `find $input_dir -type f`
+do
+	newname=`basename {$file}$n`
+	echo $newname
+	cp $file "$output_dir/$newname"
+	let n++
+done
