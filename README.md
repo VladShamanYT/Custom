@@ -2,20 +2,23 @@
 
 ## Техническое задание №2 (ТЗ2)
 
-Приложение Java
+Создание приложения Java, организация тестирования, запуск минимального CI
 
 ## Структура папок
 
-The workspace contains two folders by default, where:
-
 - `src`: папка содержит исходный код приложения
-- `lib`: папка содержит зависимости
+- `lib`: папка содержит фреймворк для тестирования
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Описание классов
+
+Класс App.java реализует приложение по техническому заданию
+Класс SimpleClass.java реализует методы, используемые приложением
+Класс SimpleClassTest.java реализует методы для тестирования
+
+Дополнительный тест, кроме указанных в техзадании, тестирует метод сложения вызывая в нем исключительную ситуацию, связанную с переполнением целочисленной переменной.
+
+## Измерения времени работы метода поиска максимума в зависимости от размера массива чисел
 
 График зависимости времени обработки массива от его размера
 ![plot](./chart.png)
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
